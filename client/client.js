@@ -1,5 +1,5 @@
 import React from 'react'
-import { reder } from 'react-dom'
-import App from '../components/App'
+import { render } from 'react-dom'
+import Apple from '../components/App'
 
-render(<App/>, document.getElementById('app'))
+render(React.createElement(Apple) , document.getElementById('app'))
