@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
+import TextInput from './TextInput'
 
-class Apple extends Component{
+class App extends Component{
   render (){
-    return <div> This is a react hot module app now! </div>
+    return(
+    <div>
+      <TextInput/>
+    </div>
+    )
   }
 }
 
-export default Apple
+export default App
