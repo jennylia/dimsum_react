@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import actions from './../redux/actions'
 
 class TextInput extends Component{
   constructor(props, context){
@@ -17,7 +18,8 @@ class TextInput extends Component{
 
   handleSubmit(event){
     event.preventDefault(); // this prevents regresh
-    console.log("submit clicked")
+    this.props.dispatch(actions.add_dim_sum(this.state.InputText))
+
   }
 
   render (){

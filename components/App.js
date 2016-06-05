@@ -7,7 +7,7 @@ class App extends Component{
   render (){
     return(
     <div>
-      <TextInput/>
+      <TextInput dispatch={this.props.dispatch}/>
       <DimSumList dim_sum_list={this.props.dim_sum_ordered}/>
     </div>
     )

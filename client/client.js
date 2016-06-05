@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import App from '../components/App'
 import configureStore from '../redux/store'
 import { Provider } from 'react-redux'
+
 //configure and create the store here..reducers. initial state
 let initialState = {
   dim_sum_ordered: [{
