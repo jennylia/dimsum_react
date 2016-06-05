@@ -8,7 +8,7 @@ class App extends Component{
     return(
     <div>
       <TextInput/>
-      <DimSumList/>
+      <DimSumList dim_sum_list={this.props.dim_sum_ordered}/>
     </div>
     )
   }
