@@ -1,5 +1,5 @@
 export default actions = {
-  addDimSum(name){
+  add_dim_sum(name){
     return {
       type: 'ADD_DIM_SUM',
       name: name
@@ -7,4 +7,4 @@ export default actions = {
   }
 }
 
-store.dispatch(addDimSum('shrimp dumplings'))
+store.dispatch(add_dim_sum('shrimp dumplings'))
