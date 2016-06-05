@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TextInput from './TextInput'
 import DimSumList from './DimSumList'
+import { connect } from 'react-redux'
 
 class App extends Component{
   render (){
@@ -13,4 +14,10 @@ class App extends Component{
   }
 }
 
-export default App
+//connect calls and throws in state,
+function mapStateToProps(state){
+  return state //the app component gets all of the state
+}
+
+//exported app with state as props
+export default connect(mapStateToProps)(App)

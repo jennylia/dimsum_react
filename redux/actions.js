@@ -7,4 +7,4 @@ export default actions = {
   }
 }
 
-store.dispatch(add_dim_sum('shrimp dumplings'))
+//store.dispatch(add_dim_sum('shrimp dumplings'))

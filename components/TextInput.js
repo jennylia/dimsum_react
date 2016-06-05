@@ -15,11 +15,16 @@ class TextInput extends Component{
     })
   }
 
+  handleSubmit(event){
+    event.preventDefault(); // this prevents regresh
+    console.log("submit clicked")
+  }
+
   render (){
     return (<div>
       <input value={this.state.InputText}
       onChange={this.handleChange.bind(this)}/>
-      <button type="button">Add a dim sum</button>
+      <button onClick={this.handleSubmit.bind(this)} type="button">Add a dim sum</button>
 
       </div>)
   }
