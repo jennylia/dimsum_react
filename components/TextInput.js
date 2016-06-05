@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import Footer from './Footer'
-import DataEntry from './DataEntry'
 
 class TextInput extends Component{
   constructor(props, context){
     super(props, context)
     this.state ={
-      InputText: 'hello world',
+      InputText: 'Which dim sum',
       FooterText: 'All rights reserved'
     }
   }
@@ -21,8 +19,7 @@ class TextInput extends Component{
     return (<div>
       <input value={this.state.InputText}
       onChange={this.handleChange.bind(this)}/>
-      <Footer displayText={this.state.FooterText}/>
-      <DataEntry displayText={this.state.InputText}/>
+      <button type="button">Add a dim sum</button>
 
       </div>)
   }

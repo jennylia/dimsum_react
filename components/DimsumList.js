@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
 
-class Footer extends Component{
+class DimSumList extends Component{
 
   render (){
     return (<div>
-    Footer: {this.props.displayText}
+        "This is the Dimsum list"
       </div>)
   }
 }
 
-export default Footer
+export default DimSumList
