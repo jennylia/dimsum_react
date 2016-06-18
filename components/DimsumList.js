@@ -9,7 +9,7 @@ class DimSumList extends Component{
           <ul>
           {
             this.props.dim_sum_list.map( (dim_sum)=>{
-              return <DimSumItem dim_sum={dim_sum}/>
+              return <DimSumItem dispatch={this.props.dispatch} dim_sum={dim_sum}/>
             })
           }
           </ul>

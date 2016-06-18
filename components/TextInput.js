@@ -17,7 +17,7 @@ class TextInput extends Component{
   }
 
   handleSubmit(event){
-    event.preventDefault(); // this prevents regresh
+    event.preventDefault(); // this prevents refresh
     this.props.dispatch(actions.add_dim_sum(this.state.InputText))
 
   }

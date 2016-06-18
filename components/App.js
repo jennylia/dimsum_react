@@ -8,7 +8,7 @@ class App extends Component{
     return(
     <div>
       <TextInput dispatch={this.props.dispatch}/>
-      <DimSumList dim_sum_list={this.props.dim_sum_ordered}/>
+      <DimSumList dispatch={this.props.dispatch} dim_sum_list={this.props.dim_sum_ordered}/>
     </div>
     )
   }
@@ -19,5 +19,5 @@ function mapStateToProps(state){
   return state //the app component gets all of the state
 }
 
-//exported app with state as props
+//exported app with state as props // dipatch comes from the store, connect it to the app
 export default connect(mapStateToProps)(App)

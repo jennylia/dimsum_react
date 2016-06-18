@@ -35,7 +35,7 @@ let reducer = function reducer(state, action) {
                     return dim_sum.id !== action.id
                 })
             })
-        
+
         default:
             return state;
 
