@@ -9,7 +9,7 @@ class DimSumList extends Component{
           <ul>
           {
             this.props.dim_sum_list.map( (dim_sum)=>{
-              return <li key={dim_sum.id}>{dim_sum.name}</li>
+              return <DimSumItem dim_sum={dim_sum}/>
             })
           }
           </ul>
