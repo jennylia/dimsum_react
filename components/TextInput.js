@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import actions from './../redux/actions'
 
 class TextInput extends Component{
   constructor(props, context){
@@ -18,7 +17,7 @@ class TextInput extends Component{
 
   handleSubmit(event){
     event.preventDefault(); // this prevents refresh
-    this.props.dispatch(actions.add_dim_sum(this.state.InputText))
+    this.props.addDimSum(this.state.InputText)
 
   }
 

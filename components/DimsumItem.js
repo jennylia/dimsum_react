@@ -6,13 +6,13 @@ class DimSumItem extends Component {
 
     handleArrived(){
         console.log("order arrived");
-        this.props.dispatch(actions.mark_dim_sum(this.props.dim_sum.id));
+        this.props.markDimSum(this.props.dim_sum.id);
 
     }
 
     handleCancel(){
         console.log("cancel order")
-        this.props.dispatch(actions.cancel_dim_sum(this.props.dim_sum.id));s
+        this.props.cancelDimSum(this.props.dim_sum.id);
     }
     render() {
         return (

@@ -9,7 +9,8 @@ class DimSumList extends Component{
           <ul>
           {
             this.props.dim_sum_list.map( (dim_sum)=>{
-              return <DimSumItem dispatch={this.props.dispatch} dim_sum={dim_sum}/>
+              return <DimSumItem markDimSum={this.props.markDimSum}
+                                 cancelDimSum={this.props.cancelDimSum} dim_sum={dim_sum}/>
             })
           }
           </ul>
