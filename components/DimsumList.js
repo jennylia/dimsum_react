@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import DimSumItem from './DimSumItem'
 
 class DimSumList extends Component{
 
